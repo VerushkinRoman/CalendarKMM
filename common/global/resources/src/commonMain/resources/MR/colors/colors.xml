@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">
+        <light>B72300</light>
+        <dark>FFB4A4</dark>
+    </color>
+    <color name="onPrimary">
+        <light>FFFFFF</light>
+        <dark>630E00</dark>
+    </color>
+    <color name="primaryContainer">
+        <light>FFDAD3</light>
+        <dark>8C1800</dark>
+    </color>
+    <color name="onPrimaryContainer">
+        <light>3D0600</light>
+        <dark>FFDAD3</dark>
+    </color>
+    <color name="secondary">
+        <light>376A20</light>
+        <dark>9CD67E</dark>
+    </color>
+    <color name="onSecondary">
+        <light>FFFFFF</light>
+        <dark>103900</dark>
+    </color>
+    <color name="secondaryContainer">
+        <light>B7F397</light>
+        <dark>1F5107</dark>
+    </color>
+    <color name="onSecondaryContainer">
+        <light>062100</light>
+        <dark>B7F397</dark>
+    </color>
+    <color name="tertiary">
+        <light>825500</light>
+        <dark>FFB951</dark>
+    </color>
+    <color name="onTertiary">
+        <light>FFFFFF</light>
+        <dark>452B00</dark>
+    </color>
+    <color name="tertiaryContainer">
+        <light>FFDDB3</light>
+        <dark>633F00</dark>
+    </color>
+    <color name="onTertiaryContainer">
+        <light>291800</light>
+        <dark>FFDDB3</dark>
+    </color>
+    <color name="error">
+        <light>BA1A1A</light>
+        <dark>FFB4AB</dark>
+    </color>
+    <color name="errorContainer">
+        <light>FFDAD6</light>
+        <dark>93000A</dark>
+    </color>
+    <color name="onError">
+        <light>FFFFFF</light>
+        <dark>690005</dark>
+    </color>
+    <color name="onErrorContainer">
+        <light>410002</light>
+        <dark>FFDAD6</dark>
+    </color>
+    <color name="background">
+        <light>FFFBFF</light>
+        <dark>3F001C</dark>
+    </color>
+    <color name="onBackground">
+        <light>3F001C</light>
+        <dark>FFD9E1</dark>
+    </color>
+    <color name="surface">
+        <light>FFFBFF</light>
+        <dark>3F001C</dark>
+    </color>
+    <color name="onSurface">
+        <light>3F001C</light>
+        <dark>FFD9E1</dark>
+    </color>
+    <color name="surfaceVariant">
+        <light>F5DDD8</light>
+        <dark>534340</dark>
+    </color>
+    <color name="onSurfaceVariant">
+        <light>534340</light>
+        <dark>D8C2BD</dark>
+    </color>
+    <color name="outline">
+        <light>85736F</light>
+        <dark>A08C88</dark>
+    </color>
+    <color name="inverseOnSurface">
+        <light>FFECEF</light>
+        <dark>3F001C</dark>
+    </color>
+    <color name="inverseSurface">
+        <light>5E1130</light>
+        <dark>FFD9E1</dark>
+    </color>
+    <color name="inversePrimary">
+        <light>FFB4A4</light>
+        <dark>B72300</dark>
+    </color>
+    <color name="shadow">
+        <light>000000</light>
+        <dark>FFFFFF</dark>
+    </color>
+    <color name="surfaceTint">
+        <light>B72300</light>
+        <dark>FFB4A4</dark>
+    </color>
+</resources>
