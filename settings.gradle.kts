@@ -9,15 +9,22 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
     repositories {
         google()
         mavenCentral()
+        maven(url = "https://jitpack.io")
+        maven(url = "https://jogamp.org/deployment/maven/") // for baseline profile
     }
 }
 
 rootProject.name = "CalendarKMM"
 include(":androidApp")
+include(":common:utils")
 include(":common:global:core")
+include(":common:global:compose")
+include(":common:global:presentation")
 include(":common:global:auth")
 include(":common:global:firebase")
 include(":common:global:navigation")

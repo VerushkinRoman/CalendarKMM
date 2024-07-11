@@ -1,5 +1,3 @@
-package theme
-
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -9,20 +7,17 @@ fun AppTheme(
     useDarkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
-    val colors = if (!useDarkTheme) {
-        LightThemeColors
-    } else {
-        DarkThemeColors
-    }
+
+    StatusBarColor(useDarkTheme)
 
     CompositionLocalProvider(
-        LocalColorProvider provides colors,
+        LocalColorProvider provides ThemeColors,
         LocalTypographyProvider provides AppTypography,
         content = content
     )
 }
 
-object MaterialTheme {
+object CalendarTheme {
     val colorScheme: AppColors
         @Composable
         get() = LocalColorProvider.current
@@ -31,3 +26,6 @@ object MaterialTheme {
         @Composable
         get() = LocalTypographyProvider.current
 }
+
+@Composable
+expect fun StatusBarColor(useDarkColors: Boolean = isSystemInDarkTheme())

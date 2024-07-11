@@ -8,6 +8,7 @@ kotlin {
         commonMain {
             dependencies {
                 implementation(project(":common:global:core"))
+                implementation(project(":common:global:utils"))
                 implementation(Dependencies.Kodein.core)
             }
         }

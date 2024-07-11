@@ -1,10 +1,25 @@
 plugins {
-    id("com.android.library")
+    id("android-setup")
     kotlin("multiplatform")
     kotlin("kapt")
+//    id("com.louiscad.complete-kotlin")
 }
 
 kotlin {
-    android()
-    ios()
+    androidTarget()
+    iosX64()
+    iosArm64()
+    iosSimulatorArm64()
+
+    applyDefaultHierarchyTemplate()
+
+    jvmToolchain(17)
+
+    sourceSets {
+        commonMain {
+            dependencies {
+                implementation(project(":common:utils"))
+            }
+        }
+    }
 }

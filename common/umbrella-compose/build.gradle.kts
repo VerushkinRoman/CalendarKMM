@@ -7,15 +7,14 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                implementation(Dependencies.Kodein.core)
                 implementation(project(":common:friends-calendar:compose"))
-                implementation(project(":common:global:core"))
+                api(project(":common:umbrella-common"))
             }
         }
 
         androidMain {
             dependencies {
-                implementation(Dependencies.Android.Other.activity)
+                implementation(Dependencies.Android.Other.activityCompose)
             }
         }
     }

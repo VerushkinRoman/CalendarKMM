@@ -11,6 +11,6 @@ class App: Application() {
     }
 }
 
-fun App.initPlatformSDK() = PlatformComposeSDK.init(
+fun App.initPlatformSDK() = PlatformSDK.init(
     configuration = PlatformConfiguration(androidContext = applicationContext)
 )

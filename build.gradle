@@ -1,1 +1,20 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        gradlePluginPortal()
+        maven { url = uri("https://plugins.gradle.org/m2/") }
+    }
+//    dependencies {
+//        classpath(Dependencies.Android.gradlePlugin)
+//        classpath(Dependencies.Android.baselineProfileGradlePlugin)
+//    }
+}
+
+//subprojects {
+//    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+//        compilerOptions {
+//            jvmTarget.set(JvmTarget.JVM_17)
+//            freeCompilerArgs.add("-Xexpect-actual-classes")
+//        }
+//    }
+//}

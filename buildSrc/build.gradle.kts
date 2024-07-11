@@ -3,18 +3,23 @@ plugins {
 }
 
 repositories {
-    mavenCentral()
     google()
+    mavenCentral()
+    mavenLocal()
     gradlePluginPortal()
     maven(url = "https://maven.pkg.jetbrains.space/public/p/compose/dev")
+    maven(url = "https://jitpack.io")
 }
 
 dependencies {
-    implementation(Dependencies.Kotlin.gradlePlugin)
-    implementation(Dependencies.Compose.gradlePlugin)
     implementation(Dependencies.Android.gradlePlugin)
-    implementation(Dependencies.Resources.gradlePlugin)
+    implementation(Dependencies.Android.gradleGoogleServicesPlugin)
+    implementation(Dependencies.Android.gradleGoogleCrashlyticsPlugin)
+    implementation(Dependencies.Compose.gradlePlugin)
+    implementation(Dependencies.Kotlin.gradlePlugin)
     implementation(Dependencies.Kotlin.Serialization.gradlePlugin)
+    implementation(Dependencies.Resources.gradlePlugin)
+//    implementation(Dependencies.Other.completeKotlinGradlePlugin)
 }
 
 kotlin {

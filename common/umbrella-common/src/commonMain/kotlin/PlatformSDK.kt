@@ -1,4 +1,5 @@
 import di.Inject
+import di.umbrellaCommonModule
 import org.kodein.di.DI
 import org.kodein.di.bind
 import org.kodein.di.direct
@@ -15,7 +16,8 @@ object PlatformSDK {
         Inject.createDependencies(
             DI {
                 importAll(
-                    umbrellaModule
+                    umbrellaModule,
+                    umbrellaCommonModule
                 )
             }.direct
         )

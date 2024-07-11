@@ -3,27 +3,20 @@ plugins {
 }
 
 android {
-    compileSdk = 33
+    compileSdk = 34
+
+    namespace = "com.posse.kotlin1.calendar"
 
     defaultConfig {
         minSdk = 26
-        targetSdk = 33
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
-    buildFeatures {
-        compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.0"
-    }
-
-    packagingOptions {
+    packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
@@ -35,7 +28,7 @@ android {
             res.srcDirs(
                 "src/androidMain/res",
                 "src/commonMain/resources",
-                File(buildDir, "generated/moko/androidMain/res")
+                File(layout.buildDirectory.get().asFile, "generated/moko-resources/androidMain/res")
             )
         }
     }

@@ -16,7 +16,7 @@ kotlin {
 
         androidMain {
             dependencies {
-                implementation(Dependencies.Android.Google.auth)
+                implementation(Dependencies.Android.Other.playAuth)
             }
         }
     }

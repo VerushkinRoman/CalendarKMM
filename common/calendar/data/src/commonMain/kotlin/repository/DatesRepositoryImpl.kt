@@ -1,16 +1,15 @@
 package repository
 
+import FirestoreRepository
 import dev.gitlive.firebase.firestore.DocumentSnapshot
 import dev.gitlive.firebase.firestore.FirebaseFirestore
-import FirestoreRepository
-import model.Documents
+import domain.CoroutinesDispatchers
+import domain.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOn
-import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.transform
 import model.DayData
-import CoroutinesDispatchers
-import Resource
+import model.Documents
 
 class DatesRepositoryImpl(
     private val firestore: FirebaseFirestore,
@@ -24,7 +23,7 @@ class DatesRepositoryImpl(
             .document(Documents.Dates.value)
             .snapshots
             .flowOn(coroutinesDispatchers.io)
-            .onStart { Resource.Loading(null) }
+//            .onStart { Resource.Loading(null) }
             .transform {
                 try {
                     val result = getResult(it)
